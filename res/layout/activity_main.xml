@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ewbyagiapp.MainActivity" 
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/ewbLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ewb"
+        android:scaleType="fitXY"
+        android:src="@drawable/ewbbu_logo" 
+        />
+
+    <Button
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ewbLogo"
+        android:layout_marginTop="20dp"
+        android:background="#9A0D17"
+        android:gravity="center"
+        android:text="@string/about_us"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" 
+        />
+
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aboutUs"
+        android:background="#EB9523"
+        android:gravity="center"
+        android:text="@string/instructions"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/instructions"
+        android:background="#4C6E41"
+        android:gravity="center"
+        android:text="@string/reader"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        >
+    
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/gaiLogo"
+        android:text="@string/home_footer"
+        android:textColor="#9B9B9B"
+        android:textSize="12sp" 
+        />
+    
+    <ImageView 
+        android:id="@+id/gaiLogo"
+        android:src="@drawable/gai_logo"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:contentDescription="@string/gai"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/gai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gaiLogo"
+        android:text="@string/gai"
+        android:textColor="#1AC6E2"
+        android:textSize="12sp" 
+        />
+    </LinearLayout>
+
+</RelativeLayout>
